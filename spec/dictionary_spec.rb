@@ -1,4 +1,3 @@
-# require 'slack-ruby-bot/rspec'
 require_relative '../lib/parser.rb'
 
 describe Parser do
