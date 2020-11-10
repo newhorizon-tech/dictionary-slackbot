@@ -2,9 +2,11 @@ require 'json'
 require 'httparty'
 
 class Parser
+  attr_reader :word
   def initialize(word)
     response = HTTParty.get("https://api.dictionaryapi.dev/api/v2/entries/en/#{word}", format: :json)
     @data = response.parsed_response.first
+    @word = word
   end
 
   def definition
