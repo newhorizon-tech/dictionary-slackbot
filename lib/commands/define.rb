@@ -1,10 +1,9 @@
-require 'open-uri'
-require 'json'
 require_relative '../parser.rb'
 
 module Dictionary
   class MainBot < SlackRubyBot::Bot
-    match [/^What is the meaning of (?<word>\w*)\?$/] do |client, data, match|
+    match(/^What is the meaning of (?<word>\w*)\?$/) do |client, data, match|
+      word = match[:word]
       ParseIt = Parser.new(word)
       definition = ParseIt.definition.to_s
       client.say(channel: data.channel, text: "#{match[:word]}: #{definition}")

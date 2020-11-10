@@ -11,4 +11,9 @@ class Parser
     word_def = @data.fetch('meanings')[0].fetch('definitions')[0].fetch('definition')
     word_def
   end
+
+  def synonyms
+    synonyms = @data.fetch('meanings')[0].fetch('definitions')[0].fetch('synonyms')
+    synonyms
+  end
 end
