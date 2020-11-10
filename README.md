@@ -16,13 +16,19 @@
 
 ### Prerequisites
 
-'activesupport'
-'async-websocket', '~>0.8.0'
-'dotenv'
-'httparty'
-'json'
-'puma'
-'slack-ruby-bot'
+- 'activesupport'
+
+- 'async-websocket', '~>0.8.0'
+
+- 'dotenv'
+
+- 'httparty'
+
+- 'json'
+
+- 'puma'
+
+- 'slack-ruby-bot'
 
 ### Setup
 
@@ -58,12 +64,10 @@ command 'Alternative words for <word>?'
 
 ## Authors
 
-👤 **Author1**
+👤 **Alaukik**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
+- Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
+- Twitter: [@techintosh3](https://twitter.com/techintosh3)
 
 ## 🤝 Contributing
 
