@@ -12,6 +12,3 @@ class Parser
     word_def
   end
 end
-
-one = Parser.new('simple')
-p one.definition

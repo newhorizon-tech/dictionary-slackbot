@@ -6,5 +6,5 @@ module Dictionary
 end
 
 SlackRubyBot.configure do |config|
-  config.aliases = [':dictionary:', 'dictionary']
+  config.aliases = [':dictionary:', 'dictionary', 'dict']
 end
