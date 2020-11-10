@@ -1,5 +1,6 @@
 # custom-slackbot
 
+https://github.com/meetDeveloper/googleDictionaryAPI
 
 Bot icon from https://feathericons.com
 
