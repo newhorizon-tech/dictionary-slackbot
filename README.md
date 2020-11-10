@@ -1,34 +1,60 @@
 # dictionary-slackbot
 
-> One paragraph statement about the project.
+> Dictionary bot runs as an addon on Slack and allows you to quickly look up the definition of any word. It also includes the ability to look up synonyms
 
 ![screenshot](./img/define.png)
 
-Additional description about the project and its features.
+![screenshot](./img/synonyms.png)
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-
-
-## Getting Started
+- Ruby
+- Slack-Ruby-Bot
+- Unofficial googleDictionaryAPI
+- Atom
 
 ### Prerequisites
 
-### Setup
+'activesupport'
+'async-websocket', '~>0.8.0'
+'dotenv'
+'httparty'
+'json'
+'puma'
+'slack-ruby-bot'
 
-### Install
+### Setup
 
 ### Usage
 
-### Run tests
+command 'define <word>'
+
+- Tells you the definition of the specified <word>
+
+
+command 'What is the meaning of <word>?'
+
+- Tells you the definition of the specified <word>'
+- '?' (Question Mark) is essential
+
+
+command 'synonyms <word>'
+- Lists the synonyms of the specified <word>
+
+command 'Alternative words for <word>?'
+- Lists the synonyms of the specified <word>
+-'?' (Question Mark) is essential
+
 
 ### Deployment
+
+- Create a bot on Slack website (https://slack.com/intl/en/help/articles/115005265703-Create-a-bot-for-your-workspace)
+- Clone the repository
+- Create a .env file in the root folder of the repository
+- Copy the Slack API Token and assign the token to a variable named "SLACK_API_TOKEN" in the .env file
+- Run 'ruby main.rb' on your local machine
+- Use the bot in your Slack workplace
 
 ## Authors
 
@@ -51,13 +77,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-
 API - https://github.com/meetDeveloper/googleDictionaryAPI
 
 Bot icon from https://feathericons.com
-
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
