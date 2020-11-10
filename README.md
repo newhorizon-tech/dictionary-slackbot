@@ -30,8 +30,6 @@
 
 - 'slack-ruby-bot'
 
-### Setup
-
 ### Usage
 
 command 'define <word>'
