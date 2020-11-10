@@ -7,9 +7,3 @@ gem 'httparty'
 gem 'json'
 gem 'puma'
 gem 'slack-ruby-bot'
-group :development, :test do
-  gem 'rack-test'
-  gem 'rspec'
-  gem 'vcr'
-  gem 'webmock'
-end

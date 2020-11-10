@@ -7,8 +7,6 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
     async (1.26.2)
       console (~> 1.0)
       nio4r (~> 2.3)
@@ -21,8 +19,6 @@ GEM
     concurrent-ruby (1.1.7)
     console (1.10.1)
       fiber-local
-    crack (0.4.4)
-    diff-lcs (1.4.4)
     dotenv (2.7.6)
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
@@ -31,7 +27,6 @@ GEM
       faraday (~> 1.0)
     fiber-local (1.0.0)
     gli (2.19.2)
-    hashdiff (1.0.1)
     hashie (4.1.0)
     httparty (0.18.1)
       mime-types (~> 3.0)
@@ -46,25 +41,8 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     nio4r (2.5.4)
-    public_suffix (4.0.6)
     puma (5.0.4)
       nio4r (~> 2.0)
-    rack (2.2.3)
-    rack-test (1.1.0)
-      rack (>= 1.0, < 3)
-    rspec (3.10.0)
-      rspec-core (~> 3.10.0)
-      rspec-expectations (~> 3.10.0)
-      rspec-mocks (~> 3.10.0)
-    rspec-core (3.10.0)
-      rspec-support (~> 3.10.0)
-    rspec-expectations (3.10.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.10.0)
-    rspec-mocks (3.10.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.10.0)
-    rspec-support (3.10.0)
     ruby2_keywords (0.0.2)
     slack-ruby-bot (0.16.0)
       hashie
@@ -79,11 +57,6 @@ GEM
     timers (4.3.2)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-    vcr (6.0.0)
-    webmock (3.9.5)
-      addressable (>= 2.3.6)
-      crack (>= 0.3.2)
-      hashdiff (>= 0.4.0, < 2.0.0)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -99,11 +72,7 @@ DEPENDENCIES
   httparty
   json
   puma
-  rack-test
-  rspec
   slack-ruby-bot
-  vcr
-  webmock
 
 BUNDLED WITH
    1.17.3
