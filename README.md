@@ -6,8 +6,6 @@
 
 ![screenshot](./img/define.png)
 
-![screenshot](./img/synonyms.png)
-
 
 ## Live Demo
 
