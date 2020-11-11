@@ -2,13 +2,15 @@
 
 > Dictionary bot runs as an addon on Slack and allows you to quickly look up the definition of any word. It also includes the ability to look up synonyms
 
+![Demo](./img/demo.gif)
+
 ![screenshot](./img/define.png)
 
 ![screenshot](./img/synonyms.png)
 
 
 
-##Live Demo
+## Live Demo
 
 You need to have a Slack account. Use the link to join this workspace
 
