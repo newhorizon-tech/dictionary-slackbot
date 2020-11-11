@@ -4,7 +4,7 @@ begin
 rescue LoadError
   system 'bundle install'
   # system 'rspec'
-  exit
+  # exit
 end
 
 require_relative '../lib/parser.rb'
