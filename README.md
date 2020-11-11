@@ -9,7 +9,6 @@
 ![screenshot](./img/synonyms.png)
 
 
-
 ## Live Demo
 
 You need to have a Slack account. Use the link to join this workspace
@@ -25,6 +24,10 @@ https://join.slack.com/t/custom-nta2748/shared_invite/zt-iwxge1x1-cxdORB2HF~qh~2
 - Atom
 
 ### Prerequisites
+
+- 'ruby'
+
+- 'bundler'
 
 - 'activesupport'
 
@@ -66,9 +69,11 @@ command 'Alternative words for <word>?'
 - Create a new workspace on Slack  (https://www.slack.com/create)
 - Log in to the new workspace
 - Create a bot on Slack website and add it to your workspace (https://slack.com/services/new/bot)
+- Edit Configuration of the Bot and copy the API Token under the "Integration Settings"
 - Clone the repository
 - Create a .env file in the root folder of the repository
-- Copy the Slack API Token and assign the token to a variable named "SLACK_API_TOKEN" in the .env file
+- Copy the Slack API Token and assign the token to a variable named "SLACK_API_TOKEN" in the .env file.
+- Run 'bundle install' to install the dependencies (Bundler is a Prerequisite)
 - Run 'ruby main.rb' on your local machine
 - Use the bot in your Slack workplace
 
@@ -83,7 +88,7 @@ command 'Alternative words for <word>?'
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/newhorizon-tech/dictionary-slackbot/issues).
 
 ## Show your support
 
