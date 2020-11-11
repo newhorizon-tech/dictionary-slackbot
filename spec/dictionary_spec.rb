@@ -1,11 +1,8 @@
 require 'rspec/expectations'
-begin
-  require 'slack-ruby-bot/rspec'
-rescue LoadError
-  system 'bundle install'
-  # system 'rspec'
-  # exit
-end
+system 'bundle install'
+require 'slack-ruby-bot'
+require 'slack-ruby-bot/rspec'
+
 require_relative '../lib/bot.rb'
 require_relative '../lib/parser.rb'
 require_relative '../lib/commands/define.rb'
