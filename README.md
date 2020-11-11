@@ -7,6 +7,14 @@
 ![screenshot](./img/synonyms.png)
 
 
+
+##Live Demo
+
+You need to have a Slack account. Use the link to join this workspace
+
+https://join.slack.com/t/custom-nta2748/shared_invite/zt-iwxge1x1-cxdORB2HF~qh~2s~Re~7dQ
+
+
 ## Built With
 
 - Ruby
@@ -53,7 +61,9 @@ command 'Alternative words for <word>?'
 
 ### Deployment
 
-- Create a bot on Slack website (https://slack.com/intl/en/help/articles/115005265703-Create-a-bot-for-your-workspace)
+- Create a new workspace on Slack  (https://www.slack.com/create)
+- Log in to the new workspace
+- Create a bot on Slack website and add it to your workspace (https://slack.com/services/new/bot)
 - Clone the repository
 - Create a .env file in the root folder of the repository
 - Copy the Slack API Token and assign the token to a variable named "SLACK_API_TOKEN" in the .env file
