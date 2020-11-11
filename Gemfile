@@ -7,7 +7,6 @@ gem 'httparty'
 gem 'json'
 gem 'puma'
 gem 'slack-ruby-bot'
-gem 'slack-ruby-bot/rspec'
 group :development, :test do
   gem 'rack-test'
   gem 'rspec'
