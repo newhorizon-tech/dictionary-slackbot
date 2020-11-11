@@ -71,10 +71,10 @@ command 'Alternative words for <word>?'
 - Create a bot on Slack website and add it to your workspace (https://slack.com/services/new/bot)
 - Edit Configuration of the Bot and copy the API Token under the "Integration Settings"
 - Clone the repository
-- Create a .env file in the root folder of the repository
+- Create a .env file in the /bin folder of the repository
 - Copy the Slack API Token and assign the token to a variable named "SLACK_API_TOKEN" in the .env file.
 - Run 'bundle install' to install the dependencies (Bundler is a Prerequisite)
-- Run 'ruby main.rb' on your local machine
+- Run 'ruby bin/main.rb' from the root directory of the repository on your local machine
 - Use the bot in your Slack workplace
 
 ## Authors

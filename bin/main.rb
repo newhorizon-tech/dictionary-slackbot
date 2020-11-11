@@ -2,7 +2,7 @@
 
 require 'slack-ruby-bot'
 require 'dotenv'
-require_relative 'lib/bot.rb'
+require_relative '../lib/bot.rb'
 
 Dotenv.load
 

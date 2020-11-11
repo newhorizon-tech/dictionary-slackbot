@@ -10,12 +10,10 @@ class Parser
   end
 
   def definition
-    word_def = @data.fetch('meanings')[0].fetch('definitions')[0].fetch('definition')
-    word_def
+    @data.fetch('meanings')[0].fetch('definitions')[0].fetch('definition')
   end
 
   def synonyms
-    synonyms = @data.fetch('meanings')[0].fetch('definitions')[0].fetch('synonyms')
-    synonyms
+    @data.fetch('meanings')[0].fetch('definitions')[0].fetch('synonyms')
   end
 end
