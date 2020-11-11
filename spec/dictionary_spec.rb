@@ -3,7 +3,7 @@ begin
   require 'slack-ruby-bot/rspec'
 rescue LoadError
   system 'bundle install'
-  system 'rspec'
+  # system 'rspec'
   exit
 end
 
