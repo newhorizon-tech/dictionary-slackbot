@@ -6,7 +6,7 @@ rescue LoadError
   # system 'rspec'
   # exit
 end
-
+require_relative '../lib/bot.rb'
 require_relative '../lib/parser.rb'
 require_relative '../lib/commands/define.rb'
 require_relative '../lib/commands/synonyms.rb'
