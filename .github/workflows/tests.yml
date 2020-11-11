@@ -14,7 +14,7 @@ jobs:
       - name: Setup RSpec
         run: |
           gem install bundler:1.17.3
-          [ -f Gemfile ] && bundle --deployment
+          [ -f Gemfile ] && bundle install
           gem install --no-document rspec:'~>3.10' httparty slack-ruby-bot
       - name: RSpec Report
         run: rspec --force-color --format documentation
