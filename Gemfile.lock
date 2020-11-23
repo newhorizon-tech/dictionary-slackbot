@@ -66,11 +66,15 @@ GEM
     minitest (5.14.2)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     nio4r (2.5.4)
     public_suffix (4.0.6)
     puma (5.0.4)
       nio4r (~> 2.0)
     rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rspec (3.10.0)
@@ -87,6 +91,11 @@ GEM
       rspec-support (~> 3.10.0)
     rspec-support (3.10.0)
     ruby2_keywords (0.0.2)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
     slack-ruby-bot (0.16.0)
       hashie
       slack-ruby-client (>= 0.14.0)
@@ -97,6 +106,7 @@ GEM
       hashie
       websocket-driver
     thread_safe (0.3.6)
+    tilt (2.0.10)
     timers (4.3.2)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
@@ -123,6 +133,7 @@ DEPENDENCIES
   puma
   rack-test
   rspec
+  sinatra
   slack-ruby-bot
   vcr
   webmock
