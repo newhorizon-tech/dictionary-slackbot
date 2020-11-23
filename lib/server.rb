@@ -3,7 +3,7 @@ require 'sinatra/base'
 module Dictionary
   class Web < Sinatra::Base
     get '/' do
-      'Define Dictionary'
+      'Dictionary works!'
     end
   end
 end
