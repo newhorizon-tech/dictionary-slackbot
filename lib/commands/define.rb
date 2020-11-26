@@ -1,4 +1,4 @@
-require_relative '../parser.rb'
+require_relative '../parser'
 
 module Dictionary
   class MainBot < SlackRubyBot::Bot
@@ -9,6 +9,7 @@ module Dictionary
       client.say(channel: data.channel, text: "#{match[:word]}: #{definition}")
     end
   end
+
   class Define < SlackRubyBot::Commands::Base
     command 'define' do |client, data, match|
       word = match['expression']
