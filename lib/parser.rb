@@ -5,10 +5,15 @@ require 'dotenv'
 class Parser
   attr_reader :word
   attr_accessor :data
-  def initialize(word)
+
+  def initialize(word, date = nil)
     if word.eql?('..wordoftheday..')
       Dotenv.load('../.env')
-      date = Date.today
+      date = if date.nil?
+               Date.today
+             else
+               Date.parse(date)
+             end
       wordnik_key = ENV['WORDNIK_API_KEY']
       url = "https://api.wordnik.com/v4/words.json/wordOfTheDay?date=#{date}&api_key=#{wordnik_key}"
     else
