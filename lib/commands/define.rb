@@ -2,7 +2,7 @@ require_relative '../parser.rb'
 
 module Dictionary
   class MainBot < SlackRubyBot::Bot
-    match(/^What is the meaning of (?<word>\w*)\?$/) do |client, data, match|
+    match(/^What is the meaning of (?<word>\w*)\?$/i) do |client, data, match|
       word = match[:word]
       new_parse = Parser.new(word)
       definition = new_parse.definition.to_s

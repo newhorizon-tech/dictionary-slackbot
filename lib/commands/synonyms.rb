@@ -2,7 +2,7 @@ require_relative '../parser.rb'
 
 module Dictionary
   class MainBot < SlackRubyBot::Bot
-    match(/^Alternative words for (?<word>\w*)\?$/) do |client, data, match|
+    match(/^Alternative words for (?<word>\w*)\?$/i) do |client, data, match|
       word = match[:word]
       new_parse = Parser.new(word)
       synonyms = new_parse.synonyms.join(', ')
