@@ -6,10 +6,10 @@ rescue LoadError
   system 'rspec'
   exit
 end
-require_relative '../lib/bot.rb'
-require_relative '../lib/parser.rb'
-require_relative '../lib/commands/define.rb'
-require_relative '../lib/commands/synonyms.rb'
+require_relative '../lib/bot'
+require_relative '../lib/parser'
+require_relative '../lib/commands/define'
+require_relative '../lib/commands/synonyms'
 
 describe Parser do
   subject { Parser.new('apple') }
@@ -20,8 +20,8 @@ describe Parser do
     it 'does not initialize if no argument is given' do
       expect { Parser.new }.to raise_error(ArgumentError)
     end
-    it 'does not initialize if more than one aguments is given' do
-      expect { Parser.new('apple', 'fruit') }.to raise_error(ArgumentError)
+    it 'does not initialize if more than two aguments is given' do
+      expect { Parser.new('apple', 'fruit', 'something') }.to raise_error(ArgumentError)
     end
   end
 end
