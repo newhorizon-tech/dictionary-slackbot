@@ -6,13 +6,13 @@ class Parser
   attr_reader :word
   attr_accessor :data
 
-  def initialize(word, date = nil)
+  def initialize(word, inp_date = nil)
     if word.eql?('..wordoftheday..')
       Dotenv.load('../.env')
-      date = if date.nil?
-               Date.today
+      date = if inp_date.nil?
+               Date.today - 1
              else
-               Date.parse(date)
+               Date.parse(inp_date)
              end
       wordnik_key = ENV['WORDNIK_API_KEY']
       url = "https://api.wordnik.com/v4/words.json/wordOfTheDay?date=#{date}&api_key=#{wordnik_key}"
@@ -34,6 +34,6 @@ class Parser
   end
 
   def wordoftheday
-    [@word, @data.fetch('definitions')[1].fetch('text')]
+    [@word, @data.fetch('definitions')[0].fetch('text')]
   end
 end

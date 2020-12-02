@@ -7,7 +7,7 @@ module Dictionary
       new_parse = Parser.new('..wordoftheday..', inp_date)
       wotd = new_parse.wordoftheday
       client.say(channel: data.channel, text: "The word of the day on #{inp_date}: #{wotd[0]}")
-      client.say(channel: data.channel, text: "#{wotd[0]}: #{wotd[1]}")
+      client.say(channel: data.channel, text: (wotd[1]).to_s)
     end
 
     match(/^Word of the day/i) do |client, data, _match|
