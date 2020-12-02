@@ -51,8 +51,7 @@ command 'synonyms {word}'
 
 command 'Alternative words for {word}?'
 - Lists the synonyms of the specified {word}
-
--'?' (Question Mark) is essential
+- '?' (Question Mark) is essential
 
 command 'wordoftheday'
 - Tells you the word of the day
