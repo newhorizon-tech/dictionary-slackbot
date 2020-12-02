@@ -24,42 +24,45 @@ https://join.slack.com/t/custom-nta2748/shared_invite/zt-iwxge1x1-cxdORB2HF~qh~2
 ### Prerequisites
 
 - 'ruby'
-
 - 'bundler'
-
 - 'activesupport'
-
 - 'async-websocket', '~>0.8.0'
-
 - 'dotenv'
-
 - 'httparty'
-
 - 'json'
-
 - 'puma'
-
 - 'slack-ruby-bot'
 
 ### Usage
 
-command 'define <word>'
+command 'define {word}'
 
-- Tells you the definition of the specified <word>
-
-
-command 'What is the meaning of <word>?'
-
-- Tells you the definition of the specified <word>'
-- '?' (Question Mark) is essential
+- Tells you the definition of the specified {word}
 
 
-command 'synonyms <word>'
-- Lists the synonyms of the specified <word>
+Text 'What is the meaning of {word}?'
 
-command 'Alternative words for <word>?'
-- Lists the synonyms of the specified <word>
+- Tells you the definition of the specified {word}'
+- '?' (Question Mark) is required
+
+
+command 'synonyms {word}'
+- Lists the synonyms of the specified {word}
+
+command 'Alternative words for {word}?'
+- Lists the synonyms of the specified {word}
 -'?' (Question Mark) is essential
+
+command 'wordoftheday'
+- Tells you the word of the day
+
+command 'Word of the day' do
+-  Tells you the word of the day
+
+command 'Word of the day on {date}' do
+-  Tells you the word of the day for the specified {date}
+
+
 
 
 ### Deployment
@@ -95,5 +98,3 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 API - https://github.com/meetDeveloper/googleDictionaryAPI
-
-Bot icon from https://feathericons.com
